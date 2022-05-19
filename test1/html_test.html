@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example: 2-1</title>
+</head>
+
+<script>
+    function sub_msg() {
+        alert("제출 완료!");
+    }
+</script>
+
+<body>
+    <form action onsubmit="sub_msg();">
+        First name :
+        <br>
+        <input id = "name" type = "text" required>
+        <br>
+        Last name :
+        <br>
+        <input type = "text" required>
+        <br>
+        Email :
+        <br>
+        <input type="text" id="email" class="email" required>
+        <br>
+
+        Gender :
+        <input type="radio" name="gender" value="gen_val" required>
+        Male
+        <input type="radio" name="gender" value="gen_val" required>
+        Female
+
+        <br>
+        Favorite :
+        <input type="checkbox" name="check" value="check_html">
+        HTML
+        <input type="checkbox" name="check" value="check_java">
+        JAVA
+        <input type="checkbox" name="check" value="check_javascript">
+        Javascript
+
+        <br>
+        Browser :
+        <select id="browsers" name="browers">
+            <option value="크롬">크롬</option>
+            <option value="크롬">사파리</option>
+            <option value="크롬">엣지</option>
+        </select>
+
+        <br>
+        Birthday :
+        <input type="date" name="birthday">
+
+        <br>
+        <input type="submit" value="제출">
+    </form>
+
+</body>
+
+</html>
